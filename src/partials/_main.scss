@@ -1,0 +1,8 @@
+.discBox {
+    flex-basis: calc(100% / 4);
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+}
