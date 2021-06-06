@@ -14,6 +14,20 @@
 <body>
     <div id="app">
         <main>
+            <div class="filterBox">
+                <form @submit.prevent="onFilterSubmit()">
+                    <label for="genre">Filtra per genere:</label>
+                    <select name="genre" id="genre" v-model="filters.fGenre">
+                        <option value="">Tutti i brani</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Rock">Rock</option>
+                    </select>
+                    <button type="submit">Filtra</button>
+                </form>
+            </div>
+
             <div class="container">
                 <div class="discBox" v-for="disc in discsList">
                     <img :src="disc.poster" alt="immagine disco">

@@ -6,3 +6,12 @@
             object-fit: contain;
         }
 }
+
+.filterBox {
+    margin-bottom: 25px;
+        form {
+            select {
+                outline: none;
+            }
+        }
+}
